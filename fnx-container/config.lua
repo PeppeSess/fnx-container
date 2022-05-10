@@ -1,5 +1,7 @@
 Config = {}
 
+Config.Inventory = 'mf-inventory' -- ox_inventory or mf-inventory
+
 Config.Container  ={
     
     ["banana"] = { -- table name, can be random  
