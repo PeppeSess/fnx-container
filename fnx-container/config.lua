@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Inventory = 'mf-inventory' -- ox_inventory or mf-inventory
+Config.Inventory = 'mf-inventory' -- ox_inventory or mf-inventory or quasar-inventory
 
 Config.Container  ={
     
