@@ -32,6 +32,9 @@ Citizen.CreateThread(function()
                                         exports["mf-inventory"]:openOtherInventory(k)
                                     elseif Config.Inventory == 'ox_inventory' then 
                                         exports.ox_inventory:openInventory('stash', {id=k})
+                                    elseif Config.Inventory == 'quasar-inventory' then 
+                                        TriggerServerEvent ("inventory:server:OpenInventory", "stash", k)
+                                        TriggerEvent ("inventory:client:SetCurrentStash", k)
                                     end
                                     ESX.ShowNotification("Codice inserito correttamente")
                                 else
